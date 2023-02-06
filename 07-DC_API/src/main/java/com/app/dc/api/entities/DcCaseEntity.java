@@ -1,9 +1,11 @@
-package com.app.dc.api.entity;
+package com.app.dc.api.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -14,13 +16,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "education_details_tab")
-public class EducationDetails {
-
+@Table(name = "DC_CASES")
+public class DcCaseEntity {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer educationId;
-	private String highestDegree;
-	private Integer graduationYear;
-	private String universityName;
+	private Integer caseId;
+	
+	private Integer appIdFk;
+	
+	private Integer planIdFk;
 }

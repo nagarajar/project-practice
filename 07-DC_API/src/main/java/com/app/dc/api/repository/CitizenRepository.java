@@ -4,9 +4,8 @@ import java.io.Serializable;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.app.dc.api.entity.IncomeDetails;
+import com.app.dc.api.entities.CitizenEntity;
 
-public interface IncomeDetailsRepository extends JpaRepository<IncomeDetails, Serializable>
-{
+public interface CitizenRepository extends JpaRepository<CitizenEntity, Serializable> {
 
 }

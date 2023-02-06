@@ -1,4 +1,4 @@
-package com.app.dc.api.entity;
+package com.app.dc.api.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,17 +14,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "income_details_tab")
-public class IncomeDetails {
+@Table(name = "plan_master")
+public class PlanEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer incomeId;
-	
-	private Double monthlySalIncome;
-	
-	private Double rentIncome;
-	
-	private Double propertyIncome;
+	private Integer planId;
+	private String planName;
 
 }

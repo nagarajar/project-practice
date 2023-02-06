@@ -1,4 +1,6 @@
-package com.app.dc.api.entity;
+package com.app.dc.api.entities;
+
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,12 +16,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "plan_tab")
-public class Plan {
-	
+@Table(name = "DC_KIDS")
+public class DcKidsEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer planId;
-	private String planName;
-
+	private Integer kidId;
+	private String kidName;
+	private LocalDate kidDob;
+	private String kidGender;
+	private Long kidSsn;
+	
+	private Integer caseIdFk;
+	
 }

@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.app.dc.api.entity.Plan;
+import com.app.dc.api.entities.PlanEntity;
 
-public interface PlanRepository extends JpaRepository<Plan, Serializable>
+public interface PlanRepository extends JpaRepository<PlanEntity, Serializable>
 {
 
 }
