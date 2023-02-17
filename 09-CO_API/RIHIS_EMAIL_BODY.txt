@@ -1,0 +1,6 @@
+Hi ${FNAME}, 
+<br/><br/>
+Please find your applied plan status details in the attached PDF file. 
+<br/><br/>
+Thanks & Regards,<br/>
+RIHS Team

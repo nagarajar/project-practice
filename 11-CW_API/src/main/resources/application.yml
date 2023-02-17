@@ -1,0 +1,55 @@
+# Application Running Port
+server:
+  port: 8088
+  
+# Application name    
+spring:
+  application:
+    name: CW-API
+# Register Application With Admin Server
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:1111/
+        
+#Java mail configuration
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: <Gmail_ID>
+    password: <App Password From gmail>
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            auth: true
+            connectiontimeout: 5000
+            timeout: 5000
+            writetimeout: 5000        
+
+# Data base Connection
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rihs_db
+    username: root
+    password: root
+    #JPA Configurations
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+# Register Application With Eureka Server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# Enable All Actuator End Points
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        

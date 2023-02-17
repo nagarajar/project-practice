@@ -1,0 +1,12 @@
+Hi ${FNAME}, 
+<br/><br/>
+Welcome to RIHIS family, your registration is almost complete. 
+<br/><br/>
+Please unlock your account using below details.
+<br/><br/>
+Temporary Password : ${TEMP_PWD}
+<br/><br/>
+<a href="http://localhost:4200/unlock?email=${EMAIL}">Link to unlock account</a>
+<br/><br/>
+Thanks,<br/>
+RIHIS Team

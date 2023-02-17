@@ -1,5 +1,6 @@
 package com.ar.api.binding;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import lombok.AllArgsConstructor;
@@ -14,6 +15,8 @@ public class RegForm {
 	private String email;
 	private Long mobileNum;
 	private String gender;
-	private Date dob;
+	private LocalDate dob;
 	private Long ssn;
+	private Integer createdBy;
+	private Integer updatedBy;
 }
